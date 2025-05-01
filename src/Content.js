@@ -5,7 +5,8 @@ import ItemList from './ItemList'
 const Content = ({items, handleCheck, handleDelete}) => {
 
     return (
-        <main>
+        // fragment. The whole component needs to be inside an element (here in App.js)
+        <>
             {
                 items.length ? (
                     <ItemList
@@ -17,7 +18,7 @@ const Content = ({items, handleCheck, handleDelete}) => {
                     <p style={{marginTop: "2rem"}} > Your list is empty! </p>
                 )
             }
-        </main>
+        </>
     )
 }
 
